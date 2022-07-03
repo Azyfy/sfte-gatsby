@@ -1,0 +1,103 @@
+.title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.9em;
+    margin: 25px 0;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer img {  
+   height: 150px;
+   width: 200px;
+}
+
+
+  .introContainer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContainer p {
+    text-align: center;
+    font-size: small;
+    position: relative;
+    top: 15px;
+}
+
+.firstpara {
+    width: 250px;
+}
+
+.secondpara {
+    width: 350px;
+}
+
+.doggo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 43%;
+    top: 33px;
+}
+
+.kitty {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20%;
+    top: 295px;
+}
+
+
+.trap {
+    position: absolute;
+    z-index: -3;
+    height: 200px;
+    width: 545px;
+}
+
+.leftline {
+    height: 250px;
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    border-left: 1px solid white;
+    transform: rotate(45deg);
+}
+
+.rightline {
+    height: 250px;
+    position: absolute;
+    top: -10px;
+    right: 80px;
+    border-left: 1px solid white;
+    transform: rotate(-45deg);
+}
+
+.topline {
+    position: relative;
+    top: 25px;
+    left: 168px;
+    width: 207px;
+    border-bottom: 1px solid white;
+}
+
+.bottomline {
+    position: relative;
+    top: 200px;
+   
+    border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 800px) { 
+    .trap {
+        display: none;
+    }
+
+  }

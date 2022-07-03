@@ -1,0 +1,23 @@
+.title {
+    margin-left: 20%;
+}
+
+.infocontainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 50px;
+    margin: 50px 0 0 20%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.infosvg {
+    width: 50px;
+    height: 50px;
+  }

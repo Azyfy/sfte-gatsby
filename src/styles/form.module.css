@@ -1,0 +1,114 @@
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.formContainer form input {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formContainer form textarea {
+    color: rgba(0,0,0, 1);
+    padding: 5px;
+    min-height: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formContainer form input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.formContainer form label:hover {
+    color: rgba(255,255,0, 1);
+}
+
+.formContainer form button {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formContainer form button:hover {
+    cursor: pointer;
+}
+
+.dayscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+
+}
+
+.peepscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 15px 0;
+}
+
+.peeps {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 100%;
+    min-width: 300px;
+}
+
+.days {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.days span {
+    border: 1px solid white;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.animalType {
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+.houseType {
+    color: rgba(0,0,0, 1);
+    margin-top: 5px;
+}
+
+.animals {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 900px) { 
+    .peepscontainer {
+        grid-template-columns: 1fr;
+    }
+
+  }
+

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+    color: white;
+  }
+
+  html, body {
+    min-height: 100vh;
+  }
+
+  body {
+    background: radial-gradient(at top left, rgba(33, 147, 176, 1) 70%, rgba(109, 213, 237, 1) 100%);
+    background-repeat: no-repeat;
+    padding: 25px;
+  }
+  p {
+    margin: 16px auto;
+    line-height: 1.5em;
+  }
+  
+  /* layout & nav */
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin: 50px auto;
+  }
+  nav .link {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+
+  nav .link:hover {
+    border-color: white;
+    border-bottom: 6px solid white;
+    border-right: 6px solid white;
+    transform: rotate(0);
+  }
+
+  nav > .link:hover a  {
+    transform: rotate(0);
+  }
+
+  .link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    font-weight: bolder;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+  }
+
+  .active {
+    color: rgba(255,255,0, 1);
+    border-bottom: 1px solid white;
+  }
+
+  .active:hover{
+    border-bottom: 1px solid transparent;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    nav .link {
+      border: none;
+      border-bottom: 1px solid transparent;
+      transform: rotate(-45deg);
+      transition: transform 0.5s;
+    }
+
+    nav .link:hover {
+      border: none;
+      border-bottom: 1px solid white;
+      transform: rotate(0);
+      
+    }
+
+    .link a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-weight: bolder;
+      transform: rotate(0);
+      transition: transform 0.5s;
+    }
+
+    .active {
+     border: none;
+     transform: rotate(0);
+    }
+  } 
+
+  @media only screen and (max-width: 350px) { 
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav .link {
+      border-bottom: 1px solid white;
+      transform: rotate(0);;
+    }
+
+    nav .link:hover {
+      transform: rotate(0);
+    }
+
+    .link a {
+      transform: rotate(0);
+    }
+
+    .active {
+     transform: rotate(0);
+    }
+  }
